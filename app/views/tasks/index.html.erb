@@ -1,0 +1,6 @@
+<h1>toutes vos taches : </h1>
+
+<%@tasks.each do |task| %>
+<h2><%= task.name %></h2>
+<p><%= task.description %></p>
+<% end %>
