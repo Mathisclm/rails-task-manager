@@ -1,6 +1,12 @@
-<h1>toutes vos taches : </h1>
+<h1>Welcome ! </h1>
+<h2>See your tasks : </h2>
 
-<%@tasks.each do |task| %>
-<h2><%= task.name %></h2>
-<p><%= task.description %></p>
-<% end %>
+<ul><%@tasks.each do |task| %>
+ <li>
+    <h3><%= task.name %></h3>
+   <p><%= task.description %></p>
+   <%= link_to , 'details' prefix_path %>
+ </li>
+  <% end %>
+</ul>
+
